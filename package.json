@@ -2,8 +2,8 @@
   "name": "frontendtemplate-min",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "start": "vite",
+    "build": "tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
