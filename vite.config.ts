@@ -2,14 +2,15 @@ import { defineConfig } from 'vite';
 // import path from 'path';
 
 export default defineConfig({
+  root: './src',
   base: './',
-  //複数ページのビルドは下記設定が必要
-  // build: {
-  //   rollupOptions: {
-  //     input: {
-  //       main: path.resolve(__dirname, 'index.html'),
-  //       nested: path.resolve(__dirname, 'nested/index.html')
-  //     }
-  //   }
-  // }
+  build: {
+    outDir: '../dist',
+    // rollupOptions: {
+    //   input: {
+    //     main: path.resolve(__dirname, 'index.html'),
+    //     nested: path.resolve(__dirname, 'nested/index.html')
+    //   }
+    // }
+  }
 })
